@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Mi Agenda",
+    "slug": "mi-agenda-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#7A213A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.miagenda.personal",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "Mi Agenda necesita acceso al calendario para mostrar tus eventos.",
+        "NSRemindersUsageDescription": "Mi Agenda necesita acceso a recordatorios para enviarte alertas."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#7A213A"
+      },
+      "package": "com.miagenda.personal",
+      "versionCode": 1,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#7A213A",
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "scheme": "miagenda",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

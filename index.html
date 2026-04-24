@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Morse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traductor de Código Morse</h1>
+        <textarea id="input" placeholder="Escribe tu texto o código aquí..."></textarea>
+        
+        <div class="controls">
+            <button onclick="translate()">Traducir</button>
+            <button onclick="clearAll()">Limpiar</button>
+        </div>
+
+        <div class="output-container">
+            <h3>Resultado:</h3>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
